@@ -1,0 +1,14 @@
+.TodoItem {
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  font-size: 24px;
+  color: #456675;
+
+}
+.TodoItem-done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.block{ 
+  padding:10px
+}

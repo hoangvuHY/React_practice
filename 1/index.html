@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="root">
+  </div>
+  <!--   <div class="title">Title React</div>
+  <img src="https://picsum.photos/id/237/200/300" alt=""> -->
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+  <script>
+    const Hello = React.createElement('div', null, 'Hello Vu.Oppa');
+    const Title = React.createElement('div', {
+      className: 'title'
+    }, 'Title React');
+    /* const Image = React.createElement('img', {
+      scr: 'https://picsum.photos/id/237/200/300'
+    }); */
+    const Images = React.createElement('img', {
+      src : "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg"
+    })
+    const App = React.createElement('div', null, Hello,Title, Images);
+    const root = document.getElementById('root');
+    ReactDOM.render(App, root)
+  </script>
+</body>
+
+</html>
